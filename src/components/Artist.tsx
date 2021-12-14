@@ -3,7 +3,7 @@ import logo from "../assets/logo.svg";
 
 const Artist: React.FC<{}> = () => {
   return (
-    <section className="w-full lg:w-1/2  p-3">
+    <section className="w-full lg:w-1/2 p-3 lg:overflow-auto h-full">
       <header className="flex items-center justify-start">
         <img src={logo} alt="Medici" className="fixed top-3 left-3" />
         <span className="flex-1 text-center">Drop No 1</span>
@@ -52,8 +52,22 @@ const Artist: React.FC<{}> = () => {
           </p>
         </div>
       </div>
-      <div className="border-t border-slate-300/25 py-3"></div>
-      <button className="block mx-auto rounded-full text-3xl uppercase bg-zinc-700 h-16 w-80">
+      <div className="border-t border-b border-slate-300/25 py-3">
+        <h3 className="text-3xl italic font-[lora]">Details</h3>
+        <p className="pt-8 text-sm">The recipient of this NFT will receive:</p>
+        <ul className="list-disc list-inside leading-10 text-sm">
+          <li>NFT</li>
+          <li>NFT</li>
+          <li>NFT</li>
+        </ul>
+        <div className="font-bold underline underline-offset-2 after:content-['→'] after:hover:translate-x-2 after:transition-transform after:inline-block after:duration-500">
+          ETHERSCAN TX{" "}
+        </div>
+        <div className="font-bold underline underline-offset-2 after:content-['→'] after:hover:translate-x-2 after:transition-transform after:inline-block after:duration-500">
+          IPFS{" "}
+        </div>
+      </div>
+      <button className="block mt-8 mx-auto rounded-full text-3xl uppercase bg-zinc-700 h-16 w-80">
         Mint
       </button>
       <div className="mx-auto py-2 text-center">Price: 1 ETH</div>
