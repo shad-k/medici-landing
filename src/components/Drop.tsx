@@ -28,7 +28,7 @@ const Drop: React.FC<{}> = () => {
         </div>
         <MintButton />
       </div>
-      <div className="p-3">
+      <div className="p-8">
         <h4 className=" border-t border-slate-300/25 pt-8">HISTORY</h4>
         <div className="pt-2">
           <HistoryItem

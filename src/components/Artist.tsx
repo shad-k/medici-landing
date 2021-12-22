@@ -4,9 +4,9 @@ import MintButton from "./MintButton";
 
 const Artist: React.FC<{}> = () => {
   return (
-    <section className="w-full lg:w-1/2 p-3 lg:overflow-auto h-full">
+    <section className="w-full lg:w-1/2 p-8 lg:overflow-auto h-full">
       <header className="flex items-center justify-start">
-        <img src={logo} alt="Medici" className="fixed top-3 left-3" />
+        <img src={logo} alt="Medici" className="fixed top-3 left-8" />
         <span className="flex-1 text-center">Drop No 1</span>
       </header>
       <div>
