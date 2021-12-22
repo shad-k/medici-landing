@@ -1,6 +1,7 @@
 import React from "react";
 
 import HistoryItem from "./HistoryItem";
+import MintButton from "./MintButton";
 
 const Drop: React.FC<{}> = () => {
   return (
@@ -25,9 +26,7 @@ const Drop: React.FC<{}> = () => {
             <span>11/50</span>
           </div>
         </div>
-        <button className="z-10 block my-8 mx-auto rounded-full text-3xl uppercase bg-zinc-700 h-16 w-80">
-          Mint
-        </button>
+        <MintButton />
       </div>
       <div className="p-3">
         <h4 className=" border-t border-slate-300/25 pt-8">HISTORY</h4>

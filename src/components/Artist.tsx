@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.svg";
+import MintButton from "./MintButton";
 
 const Artist: React.FC<{}> = () => {
   return (
@@ -67,9 +68,7 @@ const Artist: React.FC<{}> = () => {
           IPFS{" "}
         </div>
       </div>
-      <button className="block mt-8 mx-auto rounded-full text-3xl uppercase bg-zinc-700 h-16 w-80">
-        Mint
-      </button>
+      <MintButton />
       <div className="mx-auto py-2 text-center">Price: 1 ETH</div>
     </section>
   );
